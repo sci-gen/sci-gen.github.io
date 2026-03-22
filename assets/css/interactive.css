@@ -298,15 +298,15 @@ a:hover {
   height: auto;
 }
 
-.store-badge-dark {
-  display: none;
-}
-
-body.dark-mode .store-badge-light {
+.store-badge-light {
   display: none;
 }
 
 body.dark-mode .store-badge-dark {
+  display: none;
+}
+
+body.dark-mode .store-badge-light {
   display: inline-block;
 }
 
