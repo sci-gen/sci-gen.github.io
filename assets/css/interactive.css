@@ -266,9 +266,14 @@ a:hover {
 
 .footer-content {
   display: grid;
-  grid-template-columns: 1.1fr 1.4fr 0.9fr;
-  gap: 2rem;
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.9fr);
+  gap: 3rem;
   align-items: start;
+}
+
+.footer-meta {
+  display: grid;
+  gap: 2rem;
 }
 
 .footer-title,
@@ -282,11 +287,18 @@ a:hover {
   color: #d9d9d9;
 }
 
-.footer-link-group {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem 1rem;
-  line-height: 1.7;
+.footer-link-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-link-list li + li {
+  margin-top: 0.85rem;
+}
+
+.footer-link-list a {
+  display: inline-block;
 }
 
 .footer-bottom {
@@ -344,6 +356,7 @@ a:hover {
 @media (max-width: 900px) {
   .footer-content {
     grid-template-columns: 1fr;
+    gap: 2rem;
   }
 }
 
