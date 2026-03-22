@@ -298,18 +298,6 @@ a:hover {
   height: auto;
 }
 
-.store-badge-darkmode {
-  display: none;
-}
-
-body.dark-mode .store-badge-default {
-  display: none;
-}
-
-body.dark-mode .store-badge-darkmode {
-  display: inline-block;
-}
-
 .app-link-section {
   margin-top: 2rem;
   padding-top: 1rem;
