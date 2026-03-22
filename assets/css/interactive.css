@@ -36,6 +36,48 @@ body {
   padding: 0;
 }
 
+.page-container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+.post {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.post-header {
+  margin-bottom: 0;
+}
+
+.post-title {
+  font-size: 2.6rem;
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.post-content {
+  display: grid;
+  gap: 1rem;
+}
+
+.post-content > h2:first-child {
+  margin-top: 0;
+}
+
+.post-content > h2,
+.post-content > h3 {
+  margin-top: 1.5rem;
+}
+
+.post-content > p,
+.post-content > ul,
+.post-content > div {
+  margin-bottom: 0;
+}
+
 a,
 a:visited {
   color: var(--text-color);
@@ -224,6 +266,11 @@ a:hover {
   margin-top: 2rem;
 }
 
+.app-list-page ul {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
 .app-page-links {
   display: flex;
   flex-wrap: wrap;
@@ -233,6 +280,20 @@ a:hover {
 
 .app-page-links a {
   display: inline-block;
+}
+
+.app-link-section {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.app-link-heading {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
 }
 
 /* プロジェクト詳細 */
@@ -311,7 +372,7 @@ a:hover {
 /* ダークモードトグル */
 .dark-mode-toggle {
   position: fixed;
-  top: 1rem;
+  bottom: 1rem;
   right: 1rem;
   background: none;
   border: none;
@@ -345,6 +406,10 @@ a:hover {
   .hero-section h1 {
     font-size: 5rem;
   }
+
+  .page-container {
+    padding: 3.5rem 2rem 5rem;
+  }
   
   .services-section, .portfolio-section, .contact-section {
     padding: 3rem 2rem;
@@ -367,6 +432,10 @@ a:hover {
 
   .intro-section h2 {
     font-size: 1.15rem;
+  }
+
+  .post-title {
+    font-size: 2rem;
   }
 }
 

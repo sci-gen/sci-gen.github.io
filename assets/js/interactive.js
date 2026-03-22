@@ -76,7 +76,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // ダークモード切り替え機能
   const createDarkModeToggle = () => {
-    const header = document.querySelector('header') || document.body.firstElementChild;
     const darkModeToggle = document.createElement('button');
     darkModeToggle.innerHTML = '🌓';
     darkModeToggle.className = 'dark-mode-toggle';
@@ -92,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {
       document.body.classList.add('dark-mode');
     }
     
-    header.appendChild(darkModeToggle);
+    document.body.appendChild(darkModeToggle);
   };
   
   createDarkModeToggle();
