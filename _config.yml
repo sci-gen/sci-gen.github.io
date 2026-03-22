@@ -36,8 +36,8 @@ plugins:
   - jekyll-feed
 
 header_pages:
-  - portfolio.md
-  - privacy-policy.md
+  - apps/index.html
+  - privacy-policy.html
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
