@@ -74,6 +74,17 @@ a:hover {
   color: var(--text-color);
 }
 
+/* ヘッダー */
+.site-header {
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.site-header .site-title,
+.site-header .site-title:visited {
+  color: #111111 !important;
+}
+
 /* ヘッダーとナビゲーション */
 .navigation, .navigation-links {
   display: flex;
@@ -103,12 +114,12 @@ a:hover {
   margin-bottom: 2rem;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
-  background: var(--background-color);
-  color: var(--text-color);
+  background: #ffffff !important;
+  color: #111111;
   border-radius: 0;
   box-shadow: none;
-  border-top: 1px solid var(--primary-color);
-  border-bottom: 1px solid var(--primary-color);
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.8s ease, transform 0.8s ease;
@@ -124,6 +135,7 @@ a:hover {
   margin-bottom: 0;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  color: #111111;
 }
 
 .intro-section {
@@ -322,14 +334,14 @@ a:hover {
 }
 
 .site-footer {
-  background-color: var(--secondary-color);
-  color: var(--text-color);
-  border-top: 1px solid var(--border-color);
+  background-color: #ffffff !important;
+  color: #111111 !important;
+  border-top: 1px solid #e0e0e0;
 }
 
 .site-footer a,
 .site-footer a:visited {
-  color: var(--text-color);
+  color: #111111;
 }
 
 .footer-content {
@@ -347,7 +359,7 @@ a:hover {
 .footer-title,
 .footer-links-heading,
 .contact-heading {
-  color: var(--text-color);
+  color: #111111 !important;
   margin-bottom: 1rem;
 }
 
@@ -372,7 +384,7 @@ a:hover {
 .footer-bottom {
   margin-top: 2rem;
   padding-top: 1.25rem;
-  border-top: 1px solid var(--border-color);
+  border-top: 1px solid #e0e0e0;
   color: #666666;
 }
 
