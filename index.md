@@ -18,23 +18,32 @@ description: アプリポートフォリオ
 <div class="portfolio-section list-view" markdown="1">
 ## Featured Apps
 
+<a class="app-card-link" href="/apps/docstruct/">
 <div class="app-list-item" markdown="1">
-### [DocStruct](/apps/docstruct/)
+### DocStruct
 
 見開きスキャン PDF をページ単位へ分割するデスクトップアプリです。
 </div>
 
+</a>
+
+<a class="app-card-link" href="/apps/pdf-connector/">
 <div class="app-list-item" markdown="1">
-### [PDF Connector](/apps/pdf-connector/)
+### PDF Connector
 
 複数の PDF をまとめて扱うためのシンプルなユーティリティです。
 </div>
 
+</a>
+
+<a class="app-card-link" href="/apps/doc-scanner/">
 <div class="app-list-item" markdown="1">
-### [Doc-Scanner](/apps/doc-scanner/)
+### Doc-Scanner
 
 紙資料のデジタル化を支援するスキャン系アプリです。
 </div>
+
+</a>
 </div>
 
 <div class="contact-section" markdown="1">

@@ -180,6 +180,24 @@ a:hover {
   color: var(--text-color);
 }
 
+.app-card-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.app-card-link:hover,
+.app-card-link:visited,
+.app-card-link:hover h3,
+.app-card-link:visited h3 {
+  color: inherit;
+  text-decoration: none;
+}
+
+.app-card-link .app-list-item {
+  cursor: pointer;
+}
+
 .app-list-item h3,
 .app-list-page h3,
 .post-content h2,
