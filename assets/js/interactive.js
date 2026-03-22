@@ -1,17 +1,6 @@
 // インタラクティブ要素のためのJavaScript
 
 document.addEventListener('DOMContentLoaded', function() {
-  const updateStoreBadges = () => {
-    const isDarkMode = document.body.classList.contains('dark-mode');
-    const badgeImages = document.querySelectorAll('.store-badge-image');
-
-    badgeImages.forEach((image) => {
-      const defaultSrc = image.getAttribute('data-default-src');
-      const darkModeSrc = image.getAttribute('data-darkmode-src');
-      image.src = isDarkMode ? darkModeSrc : defaultSrc;
-    });
-  };
-
   // ナビゲーションのハイライト効果
   const navLinks = document.querySelectorAll('.navigation a, .navigation-links a');
   navLinks.forEach(link => {
@@ -84,29 +73,4 @@ document.addEventListener('DOMContentLoaded', function() {
   window.addEventListener('scroll', () => {
     handleScrollAnimation();
   });
-
-  // ダークモード切り替え機能
-  const createDarkModeToggle = () => {
-    const darkModeToggle = document.createElement('button');
-    darkModeToggle.innerHTML = '🌓';
-    darkModeToggle.className = 'dark-mode-toggle';
-    darkModeToggle.title = 'ダークモード切り替え';
-    
-    darkModeToggle.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-      localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
-      updateStoreBadges();
-    });
-    
-    // ローカルストレージからダークモード設定を読み込む
-    if (localStorage.getItem('darkMode') === 'true') {
-      document.body.classList.add('dark-mode');
-    }
-
-    updateStoreBadges();
-    
-    document.body.appendChild(darkModeToggle);
-  };
-  
-  createDarkModeToggle();
 });
