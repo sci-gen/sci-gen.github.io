@@ -21,7 +21,7 @@
 title: Gen.
 email: matsug08@gmail.com 
 description: >- # this means to ignore newlines until "baseurl:"
-  ポートフォリオサイト
+  個人開発している Windows アプリなどをまとめたポートフォリオサイトです。
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://sci-gen.github.io" # the base hostname & protocol for your site
 twitter_username: gen_gen33
