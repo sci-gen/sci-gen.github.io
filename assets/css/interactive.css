@@ -101,6 +101,8 @@ a:hover {
   text-align: center;
   padding: 5rem 1rem;
   margin-bottom: 2rem;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
   background: var(--primary-color);
   color: var(--background-color);
   border-radius: 0;

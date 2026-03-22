@@ -35,9 +35,7 @@ theme: minima
 plugins:
   - jekyll-feed
 
-header_pages:
-  - apps/index.html
-  - privacy-policy.html
+header_pages: []
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
