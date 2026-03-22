@@ -13,14 +13,15 @@ DocStruct is a desktop application for opening PDF files, previewing pages, spli
 
 ## Support Scope
 
-Please contact us if you need help with topics such as:
+At this time, support is limited in scope.
 
-- installing or launching the application
-- opening PDF files
-- page preview or split behavior
-- export failures
+We currently accept messages mainly for the following topics:
+
 - bug reports
+- feature requests
 - questions about the privacy policy
+
+Individual troubleshooting, setup assistance, and custom support responses are not guaranteed.
 
 ## Contact
 
@@ -39,7 +40,8 @@ To help us respond faster, please include the following when relevant:
 - app name: DocStruct
 - app version
 - Windows version
-- what you tried to do
+- what happened
+- steps to reproduce the issue
 - error message or unexpected behavior
 
 ## Privacy

@@ -1,78 +1,61 @@
 ---
 layout: home
 title: Gen.
-description: ポートフォリオサイト
+description: アプリポートフォリオ
 ---
 
 <div class="hero-section" markdown="1">
-# Imaging, Obserbing, Measuring
+# Desktop App Portfolio
 
-アメーバ運動研究から始まり、データサイエンスと生物模倣の可能性を追求しています。
+個人開発している Windows アプリをまとめたシンプルなポートフォリオサイトです。
 
-自然界の知恵を工学的に応用し、革新的なソリューションを生み出すことを目指しています。
+PDF 処理、書類整理、研究や日常業務を少し楽にするツールを中心に公開しています。
 
-[プロフィールを見る](/about/){: .cta-button .primary-button}
+[アプリ一覧を見る](/apps/){: .cta-button .primary-button}
 [お問い合わせ](https://forms.gle/vqF9APC4MJY1sH676){: .cta-button .secondary-button}
 </div>
 
-<div class="services-section" markdown="1">
-## 専門分野・サービス
-
-<div class="service-card" markdown="1">
-### 技術コンサルティング
-
-カメラ・画像処理技術を中心に、撮影・解析に関するコンサルティングを提供しています。
-
-顕微鏡の操作や観察の相談も受け付けております。
-</div>
-
-<div class="service-card" markdown="1">
-### アプリケーション開発
-
-実用的なツールやアプリケーションの開発を通じて、日常的な課題解決に貢献しています。
-</div>
-</div>
-
 <div class="portfolio-section" markdown="1">
-## 最新プロジェクト
+## Featured Apps
 
 <div class="project-card" markdown="1">
-### 牽引力顕微鏡の設計
+### DocStruct
 
-生物の動きを定量的に解析するための牽引力顕微鏡を設計し、アメーバ運動のメカニズム解明に貢献しました。
+見開きスキャン PDF をページ単位へ分割するデスクトップアプリです。
+
+[詳細を見る](/apps/#docstruct)
 </div>
 
 <div class="project-card" markdown="1">
-### アプリ：Doc-Scanner
+### PDF Connector
 
-<img src="/assets/src/doc-scanner.ico" alt="icon" class="icon">
+複数の PDF をまとめて扱うためのシンプルなユーティリティです。
 
-書類のスキャンと管理を効率化するアプリケーションです。
-[詳細を見る](/apps/#doc-scanner)
-</div>
-
-<div class="project-card" markdown="1">
-### アプリ：PDF Connector
-
-<img src="/assets/src/pdf-connector.ico" alt="icon" class="icon">
-
-
-PDFファイルの結合・分割・編集を簡単に行えるツールです。
 [詳細を見る](/apps/#pdf-connector)
+</div>
+
+<div class="project-card" markdown="1">
+### Doc-Scanner
+
+紙資料のデジタル化を支援するスキャン系アプリです。
+
+[詳細を見る](/apps/#doc-scanner)
 </div>
 </div>
 
 <div class="contact-section" markdown="1">
-## プロジェクト相談・お問い合わせ
+## Feedback
 
-プロジェクト相談や技術コンサルティングのご依頼を承っております。
+不具合報告や要望はフォームから受け付けています。
 
 [お問い合わせフォーム](https://forms.gle/vqF9APC4MJY1sH676){: .cta-button .primary-button}
 </div>
 
 <div class="navigation-links" markdown="1">
-[プロフィール](/about/) | 
+[アプリ一覧](/apps/) | 
 [プライバシーポリシー](/privacy-policy/) | 
+[DocStruct Support](/DocStruct_support/) | 
+[DocStruct Privacy Policy](/DocStruct_privacy-policy/) | 
 [PDF Connector プライバシーポリシー](/PDF_connector_privacy-policy/) | 
 [Doc-Scanner プライバシーポリシー](/Doc-Scanner_privacy-policy/)
 </div>
