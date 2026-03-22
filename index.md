@@ -15,35 +15,29 @@ description: アプリポートフォリオ
 [お問い合わせ](https://forms.gle/vqF9APC4MJY1sH676){: .cta-button .secondary-button}
 </div>
 
-<div class="portfolio-section list-view" markdown="1">
-## Featured Apps
+<div class="portfolio-section list-view">
+	<h2>Featured Apps</h2>
 
-<a class="app-card-link" href="/apps/docstruct/">
-<div class="app-list-item" markdown="1">
-### DocStruct
+	<a class="app-card-link" href="/apps/docstruct/">
+		<div class="app-list-item">
+			<h3>DocStruct</h3>
+			<p>見開きスキャン PDF をページ単位へ分割するデスクトップアプリです。</p>
+		</div>
+	</a>
 
-見開きスキャン PDF をページ単位へ分割するデスクトップアプリです。
-</div>
+	<a class="app-card-link" href="/apps/pdf-connector/">
+		<div class="app-list-item">
+			<h3>PDF Connector</h3>
+			<p>複数の PDF をまとめて扱うためのシンプルなユーティリティです。</p>
+		</div>
+	</a>
 
-</a>
-
-<a class="app-card-link" href="/apps/pdf-connector/">
-<div class="app-list-item" markdown="1">
-### PDF Connector
-
-複数の PDF をまとめて扱うためのシンプルなユーティリティです。
-</div>
-
-</a>
-
-<a class="app-card-link" href="/apps/doc-scanner/">
-<div class="app-list-item" markdown="1">
-### Doc-Scanner
-
-紙資料のデジタル化を支援するスキャン系アプリです。
-</div>
-
-</a>
+	<a class="app-card-link" href="/apps/doc-scanner/">
+		<div class="app-list-item">
+			<h3>Doc-Scanner</h3>
+			<p>紙資料のデジタル化を支援するスキャン系アプリです。</p>
+		</div>
+	</a>
 </div>
 
 <div class="contact-section" markdown="1">
