@@ -1,6 +1,12 @@
 <header class="site-header" role="banner">
-
-  <div class="wrapper">
+  <div class="wrapper site-header-inner">
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+
+    <nav class="site-header-nav" aria-label="Primary">
+      <a href="{{ "/" | relative_url }}">Home</a>
+      <a href="{{ "/apps/" | relative_url }}">Apps</a>
+      <a href="{{ "/privacy-policy/" | relative_url }}">Privacy</a>
+      <a href="https://forms.gle/vqF9APC4MJY1sH676">Contact</a>
+    </nav>
   </div>
 </header>
