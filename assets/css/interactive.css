@@ -282,6 +282,34 @@ a:hover {
   display: inline-block;
 }
 
+.store-badge-group {
+  margin-top: 0.75rem;
+}
+
+.store-badge {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.store-badge img {
+  display: block;
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+}
+
+.store-badge-dark {
+  display: none;
+}
+
+body.dark-mode .store-badge-light {
+  display: none;
+}
+
+body.dark-mode .store-badge-dark {
+  display: inline-block;
+}
+
 .app-link-section {
   margin-top: 2rem;
   padding-top: 1rem;
