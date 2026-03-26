@@ -103,9 +103,12 @@ a:visited {
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(255, 255, 255, 0.96) !important;
-  border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0)),
+    rgba(17, 17, 17, 0.97) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(12px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
 }
 
 .site-header-inner {
@@ -118,7 +121,7 @@ a:visited {
 
 .site-header .site-title,
 .site-header .site-title:visited {
-  color: #111111 !important;
+  color: #ffffff !important;
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: -0.04em;
@@ -137,6 +140,7 @@ a:visited {
   display: inline-flex;
   align-items: center;
   min-height: 44px;
+  color: #ffffff;
   font-size: 0.95rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -174,7 +178,7 @@ a:visited {
   padding: 7rem 1.5rem 6rem;
   text-align: center;
   background:
-    linear-gradient(180deg, rgba(182, 83, 51, 0.08) 0%, rgba(182, 83, 51, 0.02) 34%, #ffffff 72%),
+    linear-gradient(180deg, rgba(17, 17, 17, 0.05) 0%, rgba(182, 83, 51, 0.02) 28%, #ffffff 72%),
     #ffffff !important;
   border-top: 1px solid rgba(17, 17, 17, 0.08);
   border-bottom: 1px solid rgba(17, 17, 17, 0.08);
@@ -465,15 +469,17 @@ a:visited {
 }
 
 .site-footer {
-  background: #ffffff !important;
-  color: #111111 !important;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0)),
+    #111111 !important;
+  color: #ffffff !important;
   margin-top: 5rem;
-  border-top: 1px solid rgba(17, 17, 17, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .site-footer a,
 .site-footer a:visited {
-  color: #111111;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -497,13 +503,13 @@ a:visited {
 .footer-links-heading,
 .contact-heading {
   margin-bottom: 1rem;
-  color: #111111 !important;
+  color: #ffffff !important;
 }
 
 .footer-description,
 .footer-bottom,
 .contact-list a {
-  color: var(--muted-color);
+  color: rgba(255, 255, 255, 0.72);
 }
 
 .footer-link-list,
@@ -521,7 +527,7 @@ a:visited {
 .footer-bottom {
   margin-top: 2rem;
   padding-top: 1.25rem;
-  border-top: 1px solid rgba(17, 17, 17, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 @media (max-width: 900px) {
