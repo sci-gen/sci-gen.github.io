@@ -519,6 +519,23 @@ a:visited {
   padding: 0;
 }
 
+/* Normalize footer links so they don't inherit CTA styling */
+.footer-link-list a {
+  display: inline-block;
+  padding: 0.25rem 0;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 6px !important;
+  box-shadow: none !important;
+  color: rgba(255,255,255,0.92) !important;
+  font-weight: 500;
+}
+
+.footer-link-list a:hover {
+  color: var(--accent-color) !important;
+  text-decoration: underline;
+}
+
 .footer-link-list li + li,
 .contact-list li + li {
   margin-top: 0.85rem;
