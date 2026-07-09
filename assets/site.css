@@ -115,7 +115,13 @@ h3 { margin: 0 0 8px; font-size: 19px; line-height: 1.25; letter-spacing: 0; }
   box-shadow: 0 20px 50px rgba(23, 32, 42, .22);
   overflow: hidden;
 }
-.phone img { display: block; width: 100%; height: auto; }
+.phone img,
+.phone video {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #10151c;
+}
 .band {
   background: var(--paper);
   border-top: 1px solid var(--line);
