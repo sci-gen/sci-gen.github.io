@@ -1,13 +1,13 @@
-# Landing Site Share Copy
+# 共有文
 
 Generated: 2026-07-10
 
 ## LifeLapLogger
 
 ```text
-くらしラップ記録 is a small iPhone utility for people who want to remember when they last did recurring life tasks.
+くらしラップ記録は、交換・掃除・水やり・通院など、前回いつやったかを忘れやすい人向け。
 
-It helps you record small daily-life laps such as replacement, cleaning, watering, maintenance, and check intervals.
+暮らしの小さな繰り返しを、ラップのように記録できます。
 
 https://sci-gen.github.io/apps/life-lap-logger/
 ```
@@ -15,9 +15,9 @@ https://sci-gen.github.io/apps/life-lap-logger/
 ## AudioFieldReportPro
 
 ```text
-PA音響測定レポートPro is a small iPhone utility for PA operators, live sound engineers, venue staff.
+PA音響測定レポートProは、音楽・練習の小さな作業をiPhoneで素早く残したい人向け。
 
-It helps you log soundcheck readings, room notes, and follow-up fixes.
+PA音響測定レポートProで、必要な記録や確認をすぐ使える形にまとめられます。
 
 https://sci-gen.github.io/apps/audio-field-report-pro/
 ```
@@ -25,9 +25,9 @@ https://sci-gen.github.io/apps/audio-field-report-pro/
 ## OBD2DiagnosticLogPro
 
 ```text
-OBD2診断ログPro is a small iPhone utility for DIY mechanics and used-car buyers.
+OBD2診断ログProは、便利ツールの小さな作業をiPhoneで素早く残したい人向け。
 
-It helps you keep OBD2 codes, symptoms, and repair notes together.
+OBD2診断ログProで、必要な記録や確認をすぐ使える形にまとめられます。
 
 https://sci-gen.github.io/apps/obd2-diagnostic-log-pro/
 ```
@@ -35,9 +35,9 @@ https://sci-gen.github.io/apps/obd2-diagnostic-log-pro/
 ## SmoothDriveGTrainerPro
 
 ```text
-運転G診断Pro is a small iPhone utility for driving instructors, learner drivers, and fleet managers.
+運転G診断Proは、移動・位置の小さな作業をiPhoneで素早く残したい人向け。
 
-It helps you review harsh braking, acceleration, and cornering notes.
+運転G診断Proで、必要な記録や確認をすぐ使える形にまとめられます。
 
 https://sci-gen.github.io/apps/smooth-drive-gtrainer-pro/
 ```
@@ -45,9 +45,9 @@ https://sci-gen.github.io/apps/smooth-drive-gtrainer-pro/
 ## DroneFlightLogPro
 
 ```text
-ドローン飛行日誌Pro is a small iPhone utility for drone pilots and small survey teams.
+ドローン飛行日誌Proは、現場・業務の小さな作業をiPhoneで素早く残したい人向け。
 
-It helps you record flight sessions and preflight checklist notes.
+ドローン飛行日誌Proで、必要な記録や確認をすぐ使える形にまとめられます。
 
 https://sci-gen.github.io/apps/drone-flight-log-pro/
 ```
