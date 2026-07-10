@@ -144,6 +144,31 @@
   height: auto;
   background: #10151c;
 }
+.screenshot-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  padding: 20px 0 38px;
+}
+.screenshot-gallery figure {
+  margin: 0;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--paper);
+  box-shadow: 0 10px 24px rgba(23, 32, 42, .08);
+}
+.screenshot-gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.screenshot-gallery figcaption {
+  padding: 12px 4px 4px;
+  color: #344255;
+  font-weight: 750;
+}
 .desktop-panel {
   border-radius: 14px;
   border-width: 8px;
@@ -382,6 +407,16 @@
     .hero { grid-template-columns: 1fr; }
     .hero { padding-top: 30px; }
     .phone { width: min(76vw, 300px); }
+    .screenshot-gallery {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding-bottom: 24px;
+    }
+    .screenshot-gallery figure {
+      flex: 0 0 min(82vw, 310px);
+      scroll-snap-align: start;
+    }
   }
   @media (max-width: 560px) {
     nav, main, footer { padding-left: 16px; padding-right: 16px; }
