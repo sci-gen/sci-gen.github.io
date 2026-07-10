@@ -4,35 +4,60 @@ Generated: 2026-07-10
 
 ## AudioFieldReportPro
 
-```text
-PA音響測定レポートProは、PAオペレーター、ライブ音響担当、会場スタッフ向け。
+### 投稿案1
 
-外部測定器で確認したSPLや帯域値、会場・測定位置、現場メモを1つのレポートにまとめられます。
+```text
+サウンドチェックのSPL、会場名、測定位置を別々に残していませんか？ 外部測定器で確認した値と現場メモを1件にまとめ、次回の仕込み前に見返せるiPhone記録アプリです。自動測定ではありません。
+
+https://sci-gen.github.io/apps/audio-field-report-pro/
+```
+
+### 投稿案2
+
+```text
+PA現場の測定値を『何dBだったか』だけで終わらせず、目標値・帯域・測定位置と一緒に保存。外部測定器を使うPA担当者向けの買い切り記録ツールです。
 
 https://sci-gen.github.io/apps/audio-field-report-pro/
 ```
 
 ## OBD2DiagnosticLogPro
 
-```text
-OBD2診断ログProは、DIY整備、車両点検、中古車確認で故障コードを記録したい人向け。
+### 投稿案1
 
-外部スキャナーで確認したOBD2故障コード、車両状態、対応メモを手入力で整理できます。
+```text
+OBD2の故障コードを消す前に、その時の症状や対応内容も残していますか？ 外部スキャナーのDTC・RPM・水温を車両別に整理し、CSVで共有できるiPhone整備ログです。アダプターへの直接接続は行いません。
+
+https://sci-gen.github.io/apps/obd2-diagnostic-log-pro/
+```
+
+### 投稿案2
+
+```text
+同じDTCが再発した時、前回の症状と作業内容を比較できるように。外部OBD2スキャナーで確認した情報を手入力で残す、広告なし・買い切りの記録アプリです。
 
 https://sci-gen.github.io/apps/obd2-diagnostic-log-pro/
 ```
 
 ## SmoothDriveGTrainerPro
 
-```text
-運転G診断Proは、運転指導、練習、社用車の振り返りで急操作を具体化したい人向け。
+### 投稿案1
 
-走行後に加速G、減速G、横G、急操作回数を入力し、運転セッションを振り返れます。
+```text
+『もっと滑らかに』だけでは、次の運転で何を変えるか曖昧です。停車後に加速G・減速G・横G・急操作回数を入力し、場面メモと一緒に振り返るiPhoneアプリです。走行中の自動計測は行いません。
+
+https://sci-gen.github.io/apps/smooth-drive-gtrainer-pro/
+```
+
+### 投稿案2
+
+```text
+ブレーキ・加速・旋回の振り返りをセッション単位で記録。安全な場所へ停車後、確認済みのG値と改善メモを入力してCSV共有できる買い切り運転ログです。
 
 https://sci-gen.github.io/apps/smooth-drive-gtrainer-pro/
 ```
 
 ## DroneFlightLogPro
+
 
 ```text
 ドローン飛行日誌Proは、ドローン操縦者、小規模な撮影・調査チーム向け。
@@ -43,6 +68,7 @@ https://sci-gen.github.io/apps/drone-flight-log-pro/
 ```
 
 ## FieldPhotoLedgerPro
+
 
 ```text
 現場写真台帳Proは、工事、点検、物件管理で現場写真を案件別に整理したい人向け。
