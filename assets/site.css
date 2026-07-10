@@ -20,6 +20,11 @@
     overflow-wrap: anywhere;
   }
   a { color: var(--green); font-weight: 700; text-decoration: none; }
+  a:focus-visible {
+    outline: 3px solid #f3bd59;
+    outline-offset: 3px;
+    border-radius: 5px;
+  }
   header.site {
     background: var(--paper);
     border-bottom: 1px solid var(--line);
@@ -83,6 +88,14 @@
   }
   h2 { margin: 0 0 12px; font-size: 28px; letter-spacing: 0; }
   h3 { margin: 0 0 8px; font-size: 19px; line-height: 1.25; letter-spacing: 0; }
+  .eyebrow {
+    display: inline-flex;
+    margin: 0 0 12px;
+    color: var(--green);
+    font-size: 14px;
+    font-weight: 850;
+    letter-spacing: .08em;
+  }
   .lead {
     margin: 0 0 22px;
     color: var(--muted);
@@ -215,6 +228,10 @@
     border-color: #94c8c1;
     box-shadow: 0 10px 26px rgba(20, 108, 99, .10);
   }
+  .priority-grid .app-card {
+    grid-template-columns: clamp(82px, 20vw, 116px) minmax(0, 1fr);
+    align-items: start;
+  }
   .app-copy { min-width: 0; }
   .app-title-row {
     display: flex;
@@ -301,6 +318,17 @@
   .article-body p {
     color: #253243;
   }
+  .closing-cta {
+    margin-top: 34px;
+    margin-bottom: 18px;
+    padding: clamp(22px, 5vw, 38px);
+    border-radius: 12px;
+    color: #fff;
+    background: linear-gradient(135deg, #0f5e57, #244b79);
+  }
+  .closing-cta h2 { color: #fff; }
+  .closing-cta p { color: #dcebea; }
+  .closing-cta .button { background: #fff; color: #0f5e57; }
   footer {
     color: var(--muted);
     padding-top: 26px;
@@ -339,6 +367,7 @@
       align-items: start;
       padding: 12px;
     }
+    .priority-grid .app-card { grid-template-columns: 74px minmax(0, 1fr); }
     .app-card p { margin: 8px 0; }
     .app-title-row {
       align-items: flex-start;

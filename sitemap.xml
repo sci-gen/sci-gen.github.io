@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://sci-gen.github.io/</loc></url>
-  <url><loc>https://sci-gen.github.io/apps/life-lap-logger/</loc></url>
   <url><loc>https://sci-gen.github.io/apps/audio-field-report-pro/</loc></url>
   <url><loc>https://sci-gen.github.io/apps/obd2-diagnostic-log-pro/</loc></url>
   <url><loc>https://sci-gen.github.io/apps/smooth-drive-gtrainer-pro/</loc></url>
@@ -32,6 +31,7 @@
   <url><loc>https://sci-gen.github.io/apps/diysizing-memo/</loc></url>
   <url><loc>https://sci-gen.github.io/apps/envelope-tracer/</loc></url>
   <url><loc>https://sci-gen.github.io/apps/event-packing-checklist/</loc></url>
+  <url><loc>https://sci-gen.github.io/apps/life-lap-logger/</loc></url>
   <url><loc>https://sci-gen.github.io/apps/magnetic-field-logger/</loc></url>
   <url><loc>https://sci-gen.github.io/apps/morse-trainer-keyboard/</loc></url>
   <url><loc>https://sci-gen.github.io/apps/pitch-layout-calc/</loc></url>

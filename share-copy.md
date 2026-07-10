@@ -2,22 +2,12 @@
 
 Generated: 2026-07-10
 
-## LifeLapLogger
-
-```text
-くらしラップ記録は、交換・掃除・水やり・通院など、前回いつやったかを忘れやすい人向け。
-
-暮らしの小さな繰り返しを、ラップのように記録できます。
-
-https://sci-gen.github.io/apps/life-lap-logger/
-```
-
 ## AudioFieldReportPro
 
 ```text
-PA音響測定レポートProは、音楽・練習の小さな作業をiPhoneで素早く残したい人向け。
+PA音響測定レポートProは、PAオペレーター、ライブ音響担当、会場スタッフ向け。
 
-PA音響測定レポートProで、必要な記録や確認をすぐ使える形にまとめられます。
+会場音量チェックの測定値、部屋の状態、調整メモを1つのレポートにまとめられます。
 
 https://sci-gen.github.io/apps/audio-field-report-pro/
 ```
@@ -25,9 +15,9 @@ https://sci-gen.github.io/apps/audio-field-report-pro/
 ## OBD2DiagnosticLogPro
 
 ```text
-OBD2診断ログProは、便利ツールの小さな作業をiPhoneで素早く残したい人向け。
+OBD2診断ログProは、DIY整備、車両点検、中古車確認で故障コードを記録したい人向け。
 
-OBD2診断ログProで、必要な記録や確認をすぐ使える形にまとめられます。
+OBD2の故障コード、症状、整備メモを車両ごとに整理できます。
 
 https://sci-gen.github.io/apps/obd2-diagnostic-log-pro/
 ```
@@ -35,9 +25,9 @@ https://sci-gen.github.io/apps/obd2-diagnostic-log-pro/
 ## SmoothDriveGTrainerPro
 
 ```text
-運転G診断Proは、移動・位置の小さな作業をiPhoneで素早く残したい人向け。
+運転G診断Proは、運転指導、練習、社用車の振り返りで急操作を具体化したい人向け。
 
-運転G診断Proで、必要な記録や確認をすぐ使える形にまとめられます。
+急加速、急減速、旋回時のGを記録し、運転セッションを振り返れます。
 
 https://sci-gen.github.io/apps/smooth-drive-gtrainer-pro/
 ```
@@ -45,10 +35,20 @@ https://sci-gen.github.io/apps/smooth-drive-gtrainer-pro/
 ## DroneFlightLogPro
 
 ```text
-ドローン飛行日誌Proは、現場・業務の小さな作業をiPhoneで素早く残したい人向け。
+ドローン飛行日誌Proは、ドローン操縦者、小規模な撮影・調査チーム向け。
 
-ドローン飛行日誌Proで、必要な記録や確認をすぐ使える形にまとめられます。
+飛行内容と点検記録をまとめ、テキスト／CSVで共有できます。
 
 https://sci-gen.github.io/apps/drone-flight-log-pro/
+```
+
+## FieldPhotoLedgerPro
+
+```text
+現場写真台帳Proは、工事、点検、物件管理で現場写真を案件別に整理したい人向け。
+
+GPS付き現場写真とメモを案件ごとに整理できます。
+
+https://sci-gen.github.io/apps/field-photo-ledger-pro/
 ```
 
