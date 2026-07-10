@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>OBD2診断ログPro | Sci-Gen Apps</title>
-  <meta name="description" content="OBD2診断ログPro: 外部スキャナーで確認したOBD2故障コード、車両状態、対応メモを手入力で整理できます。">
+  <title>OBD2故障コード・整備記録アプリ | OBD2診断ログPro | Sci-Gen Apps</title>
+  <meta name="description" content="外部スキャナーで確認したDTC、RPM、水温、症状、対応内容を車両別に記録しCSV共有。アダプターへ直接接続しない買い切りiPhoneアプリ。">
   <meta name="apple-itunes-app" content="app-id=6787867170">
   <link rel="canonical" href="https://sci-gen.github.io/apps/obd2-diagnostic-log-pro/">
-  <meta property="og:title" content="OBD2診断ログPro | Sci-Gen Apps">
-  <meta property="og:description" content="OBD2診断ログPro: 外部スキャナーで確認したOBD2故障コード、車両状態、対応メモを手入力で整理できます。">
+  <meta property="og:title" content="OBD2故障コード・整備記録アプリ | OBD2診断ログPro | Sci-Gen Apps">
+  <meta property="og:description" content="外部スキャナーで確認したDTC、RPM、水温、症状、対応内容を車両別に記録しCSV共有。アダプターへ直接接続しない買い切りiPhoneアプリ。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://sci-gen.github.io/apps/obd2-diagnostic-log-pro/">
   <meta property="og:image" content="https://sci-gen.github.io/assets/og/obd2-diagnostic-log-pro.png">
@@ -20,7 +20,7 @@
   <meta name="twitter:image:alt" content="OBD2診断ログProの機能紹介">
   <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../../assets/site.css">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"OBD2診断ログPro","applicationCategory":"Utilities","operatingSystem":"iOS","description":"外部スキャナーで確認したOBD2故障コード、車両状態、対応メモを手入力で整理できます","url":"https://sci-gen.github.io/apps/obd2-diagnostic-log-pro/","downloadUrl":"https://apps.apple.com/jp/app/id6787867170","offers":{"@type":"Offer","price":2500,"priceCurrency":"JPY","availability":"https://schema.org/InStock"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"OBD2診断ログPro","applicationCategory":"Utilities","operatingSystem":"iOS","description":"外部スキャナーで確認したOBD2故障コード、車両状態、対応メモを手入力で整理できます","url":"https://sci-gen.github.io/apps/obd2-diagnostic-log-pro/","downloadUrl":"https://apps.apple.com/jp/app/id6787867170","offers":{"@type":"Offer","price":2500,"priceCurrency":"JPY","availability":"https://schema.org/InStock"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"ELM327などのOBD2アダプターへ直接接続しますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。本アプリはアダプターへ接続せず、外部スキャナーで確認した値を手入力します。"}},{"@type":"Question","name":"故障コードの読取りや消去はできますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。コードの読取り・消去は外部スキャナーで行い、本アプリには消去前の状態と対応履歴を残します。"}},{"@type":"Question","name":"どの情報を記録できますか？","acceptedAnswer":{"@type":"Answer","text":"車両名、故障コード、警告状態、RPM、水温、速度、症状、対応内容を記録できます。"}},{"@type":"Question","name":"整備工場へ共有できますか？","acceptedAnswer":{"@type":"Answer","text":"はい。複数の記録をCSV形式で共有できます。ただし故障原因や安全性を判定するアプリではありません。"}}]}]}</script>
 </head>
 <body>
   <header class="site">
@@ -83,6 +83,39 @@
   <figcaption>中古車確認やDIY整備の履歴比較に</figcaption>
 </figure>
 
+    </div>
+  </main>
+</section>
+<section class="band">
+  <main>
+    <h2 class="section-title"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m16 16 4 4"></path></svg><span>購入前に確認すること</span></h2>
+    <div class="grid">
+      <article class="card feature">
+  <span class="feature-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 13 4 4L19 7"></path></svg></span>
+  <div><h3>用意するもの</h3><p>故障コードや車両状態を確認できる外部OBD2スキャナー。</p></div>
+</article>
+
+<article class="card feature">
+  <span class="feature-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 13 4 4L19 7"></path></svg></span>
+  <div><h3>このアプリの役割</h3><p>DTC、警告状態、RPM、水温、速度、症状、対応内容を車両別にまとめます。</p></div>
+</article>
+
+<article class="card feature">
+  <span class="feature-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 13 4 4L19 7"></path></svg></span>
+  <div><h3>共有方法</h3><p>複数の整備ログをCSV形式で共有できます。</p></div>
+</article>
+
+    </div>
+  </main>
+</section>
+<section class="band">
+  <main>
+    <h2 class="section-title"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h7l4 4v14H7z"></path><path d="M14 3v5h5"></path><path d="M9 12h6"></path><path d="M9 16h6"></path></svg><span>よくある質問</span></h2>
+    <div class="grid">
+      <article class="card"><h3>ELM327などのOBD2アダプターへ直接接続しますか？</h3><p>いいえ。本アプリはアダプターへ接続せず、外部スキャナーで確認した値を手入力します。</p></article>
+<article class="card"><h3>故障コードの読取りや消去はできますか？</h3><p>いいえ。コードの読取り・消去は外部スキャナーで行い、本アプリには消去前の状態と対応履歴を残します。</p></article>
+<article class="card"><h3>どの情報を記録できますか？</h3><p>車両名、故障コード、警告状態、RPM、水温、速度、症状、対応内容を記録できます。</p></article>
+<article class="card"><h3>整備工場へ共有できますか？</h3><p>はい。複数の記録をCSV形式で共有できます。ただし故障原因や安全性を判定するアプリではありません。</p></article>
     </div>
   </main>
 </section>
