@@ -265,6 +265,12 @@
     margin-bottom: 8px;
   }
   .app-title-row h3 { margin: 0; }
+  .badge-row {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-left: auto;
+  }
   .badge {
     display: inline-flex;
     align-items: center;
@@ -433,8 +439,17 @@
     .priority-grid .app-card { grid-template-columns: 74px minmax(0, 1fr); }
     .app-card p { margin: 8px 0; }
     .app-title-row {
+      display: grid;
+      grid-template-columns: 28px minmax(0, 1fr);
       align-items: flex-start;
       gap: 8px;
+    }
+    .app-title-row .category-icon { grid-column: 1; grid-row: 1; }
+    .app-title-row h3 { grid-column: 2; grid-row: 1; }
+    .app-title-row .badge-row {
+      grid-column: 2;
+      grid-row: 2;
+      margin: 0;
     }
     .category-icon { width: 28px; height: 28px; }
     .metric-row { display: grid; grid-template-columns: 1fr; gap: 8px; }
