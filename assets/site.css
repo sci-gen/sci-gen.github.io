@@ -318,6 +318,34 @@
   .article-body p {
     color: #253243;
   }
+  .comparison-wrap {
+    overflow-x: auto;
+    margin: 20px 0 34px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--paper);
+  }
+  .comparison-table {
+    width: 100%;
+    min-width: 720px;
+    border-collapse: collapse;
+  }
+  .comparison-table th,
+  .comparison-table td {
+    padding: 14px;
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+    vertical-align: top;
+  }
+  .comparison-table th { background: var(--soft); }
+  .comparison-table tr:last-child td { border-bottom: 0; }
+  .notice {
+    margin: 20px 0;
+    padding: 16px;
+    border-left: 4px solid var(--amber);
+    border-radius: 6px;
+    background: #fff8e8;
+  }
   .closing-cta {
     margin-top: 34px;
     margin-bottom: 18px;
