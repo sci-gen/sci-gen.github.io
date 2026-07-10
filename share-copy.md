@@ -7,7 +7,7 @@ Generated: 2026-07-10
 ```text
 PA音響測定レポートProは、PAオペレーター、ライブ音響担当、会場スタッフ向け。
 
-会場音量チェックの測定値、部屋の状態、調整メモを1つのレポートにまとめられます。
+外部測定器で確認したSPLや帯域値、会場・測定位置、現場メモを1つのレポートにまとめられます。
 
 https://sci-gen.github.io/apps/audio-field-report-pro/
 ```
@@ -17,7 +17,7 @@ https://sci-gen.github.io/apps/audio-field-report-pro/
 ```text
 OBD2診断ログProは、DIY整備、車両点検、中古車確認で故障コードを記録したい人向け。
 
-OBD2の故障コード、症状、整備メモを車両ごとに整理できます。
+外部スキャナーで確認したOBD2故障コード、車両状態、対応メモを手入力で整理できます。
 
 https://sci-gen.github.io/apps/obd2-diagnostic-log-pro/
 ```
@@ -27,7 +27,7 @@ https://sci-gen.github.io/apps/obd2-diagnostic-log-pro/
 ```text
 運転G診断Proは、運転指導、練習、社用車の振り返りで急操作を具体化したい人向け。
 
-急加速、急減速、旋回時のGを記録し、運転セッションを振り返れます。
+走行後に加速G、減速G、横G、急操作回数を入力し、運転セッションを振り返れます。
 
 https://sci-gen.github.io/apps/smooth-drive-gtrainer-pro/
 ```
