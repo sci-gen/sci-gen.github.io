@@ -19,7 +19,10 @@
     buttons.forEach((button) => {
       button.setAttribute('aria-pressed', String(button.dataset.categoryFilter === active));
     });
-    if (count) count.textContent = `${visible}本を表示`;
+    if (count) {
+      const template = root.dataset.catalogCountTemplate || '{count}本を表示';
+      count.textContent = template.replace('{count}', String(visible));
+    }
     if (empty) empty.hidden = visible !== 0;
     if (updateUrl) {
       const url = new URL(window.location.href);
