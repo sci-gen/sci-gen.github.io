@@ -21,6 +21,24 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/site.css">
   <script defer src="assets/catalog-filter.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K3P7D4MH7P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-K3P7D4MH7P");
+  document.addEventListener("click", function(event) {
+    const link = event.target.closest("a[data-analytics-app-store]");
+    if (!link) return;
+    gtag("event", "app_store_click", {
+      app_name: link.dataset.appName,
+      app_slug: link.dataset.appSlug,
+      app_category: link.dataset.appCategory,
+      placement: link.dataset.analyticsPlacement,
+      transport_type: "beacon"
+    });
+  });
+</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"Sci-Gen iPhone業務アプリ","itemListElement":[{"@type":"ListItem","position":1,"url":"https://sci-gen.github.io/apps/audio-field-report-pro/","name":"PA音響測定レポートPro"},{"@type":"ListItem","position":2,"url":"https://sci-gen.github.io/apps/obd2-diagnostic-log-pro/","name":"OBD2診断ログPro"},{"@type":"ListItem","position":3,"url":"https://sci-gen.github.io/apps/smooth-drive-gtrainer-pro/","name":"運転G診断Pro"}]}</script>
 </head>
 <body>
@@ -234,7 +252,7 @@
 </section>
 
 <footer>
-  Generated 2026-07-11 from released App Store portfolio metadata.
+  Generated 2026-07-12 from released App Store portfolio metadata.
 </footer>
 
 </body>

@@ -21,6 +21,24 @@
   <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../../assets/site.css">
   <script defer src="../../assets/catalog-filter.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K3P7D4MH7P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-K3P7D4MH7P");
+  document.addEventListener("click", function(event) {
+    const link = event.target.closest("a[data-analytics-app-store]");
+    if (!link) return;
+    gtag("event", "app_store_click", {
+      app_name: link.dataset.appName,
+      app_slug: link.dataset.appSlug,
+      app_category: link.dataset.appCategory,
+      placement: link.dataset.analyticsPlacement,
+      transport_type: "beacon"
+    });
+  });
+</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"PA音響測定レポートPro","applicationCategory":"Music","operatingSystem":"iOS","description":"外部測定器で確認したSPLや帯域値、会場・測定位置、現場メモを1つのレポートにまとめられます","url":"https://sci-gen.github.io/apps/audio-field-report-pro/","downloadUrl":"https://apps.apple.com/jp/app/id6787867147","offers":{"@type":"Offer","price":1500,"priceCurrency":"JPY","availability":"https://schema.org/InStock","priceValidUntil":"2026-07-23","description":"期間限定導入価格。2026-07-24に通常3000円へ戻ります。"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"iPhoneのマイクで音量を自動測定しますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。外部測定器で確認したSPLや帯域値を手入力して整理するアプリです。"}},{"@type":"Question","name":"どのような記録を残せますか？","acceptedAnswer":{"@type":"Answer","text":"会場、測定位置、SPL、目標値、Low・Mid・Highの値、現場メモを保存できます。"}},{"@type":"Question","name":"記録を他の人へ渡せますか？","acceptedAnswer":{"@type":"Answer","text":"はい。保存したレポートをテキストで共有できます。"}},{"@type":"Question","name":"どんな人に向いていますか？","acceptedAnswer":{"@type":"Answer","text":"すでに外部測定器を使い、サウンドチェック結果を会場ごとに再利用したいPA担当者向けです。自動測定や音響解析が目的の場合は向きません。"}}]}]}</script>
 </head>
 <body>
@@ -43,7 +61,7 @@
           <h1>PA音響測定レポートPro</h1>
       <p class="lead">外部測定器で確認したSPLや帯域値、会場・測定位置、現場メモを1つのレポートにまとめられます。</p>
       <div class="actions">
-        <a class="app-store-badge" href="https://apps.apple.com/jp/app/id6787867147" aria-label="PA音響測定レポートProをApp Storeで見る"><img src="../../assets/badges/app-store-ja.svg" alt="App Storeからダウンロード"></a>
+        <a class="app-store-badge" href="https://apps.apple.com/jp/app/id6787867147" aria-label="PA音響測定レポートProをApp Storeで見る" data-analytics-app-store data-app-name="PA音響測定レポートPro" data-app-slug="audio-field-report-pro" data-app-category="music" data-analytics-placement="app_detail_hero"><img src="../../assets/badges/app-store-ja.svg" alt="App Storeからダウンロード"></a>
         <a class="button secondary" href="../../categories/music/index.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="1.5"></rect><rect x="13" y="4" width="7" height="7" rx="1.5"></rect><rect x="4" y="13" width="7" height="7" rx="1.5"></rect><rect x="13" y="13" width="7" height="7" rx="1.5"></rect></svg><span>音楽・練習のアプリ</span></a>
       </div>
       <div class="metric-row">
@@ -136,7 +154,7 @@
   </section>
 </main>
 <footer>
-  Generated 2026-07-11. App Store availability and pricing can change.
+  Generated 2026-07-12. App Store availability and pricing can change.
 </footer>
 
 </body>

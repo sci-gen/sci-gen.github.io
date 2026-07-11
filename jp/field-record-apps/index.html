@@ -21,6 +21,24 @@
   <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../../assets/site.css">
   <script defer src="../../assets/catalog-filter.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K3P7D4MH7P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-K3P7D4MH7P");
+  document.addEventListener("click", function(event) {
+    const link = event.target.closest("a[data-analytics-app-store]");
+    if (!link) return;
+    gtag("event", "app_store_click", {
+      app_name: link.dataset.appName,
+      app_slug: link.dataset.appSlug,
+      app_category: link.dataset.appCategory,
+      placement: link.dataset.analyticsPlacement,
+      transport_type: "beacon"
+    });
+  });
+</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"ItemList","name":"iPhone現場記録アプリ3本の比較","itemListElement":[{"@type":"ListItem","position":1,"name":"PA音響測定レポートPro","url":"https://sci-gen.github.io/apps/audio-field-report-pro/"},{"@type":"ListItem","position":2,"name":"OBD2診断ログPro","url":"https://sci-gen.github.io/apps/obd2-diagnostic-log-pro/"},{"@type":"ListItem","position":3,"name":"運転G診断Pro","url":"https://sci-gen.github.io/apps/smooth-drive-gtrainer-pro/"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"PA音響測定レポートProはiPhoneのマイクで音量を自動測定しますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。外部の騒音計や測定器で確認したSPL・帯域値を手入力し、会場や測定位置のメモと一緒に残す記録アプリです。"}},{"@type":"Question","name":"OBD2診断ログProはELM327や車両へ直接接続しますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。外部OBD2スキャナーで確認した故障コード、車両状態、対応内容を手入力で整理するログアプリです。"}},{"@type":"Question","name":"運転G診断Proは走行中のGを自動測定しますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。安全な場所へ停車した後、確認済みの加速G・減速G・横Gや急操作回数を入力して振り返るアプリです。走行中に操作しないでください。"}},{"@type":"Question","name":"入力した記録はどこに保存されますか？","acceptedAnswer":{"@type":"Answer","text":"3アプリともアカウント登録や運営バックエンドを使わず、記録は端末内へ保存します。必要な内容はテキストやCSVで共有できます。"}}]}]}</script>
 </head>
 <body>
@@ -76,7 +94,7 @@
 <article class="card"><h3>入力した記録はどこに保存されますか？</h3><p>3アプリともアカウント登録や運営バックエンドを使わず、記録は端末内へ保存します。必要な内容はテキストやCSVで共有できます。</p></article>
   </div>
 </main>
-<footer>Generated 2026-07-11. App Store availability and pricing can change.</footer>
+<footer>Generated 2026-07-12. App Store availability and pricing can change.</footer>
 
 </body>
 </html>

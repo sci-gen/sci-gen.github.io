@@ -21,6 +21,24 @@
   <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../../assets/site.css">
   <script defer src="../../assets/catalog-filter.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K3P7D4MH7P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-K3P7D4MH7P");
+  document.addEventListener("click", function(event) {
+    const link = event.target.closest("a[data-analytics-app-store]");
+    if (!link) return;
+    gtag("event", "app_store_click", {
+      app_name: link.dataset.appName,
+      app_slug: link.dataset.appSlug,
+      app_category: link.dataset.appCategory,
+      placement: link.dataset.analyticsPlacement,
+      transport_type: "beacon"
+    });
+  });
+</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"運転G診断Pro","applicationCategory":"Navigation","operatingSystem":"iOS","description":"走行後に加速G、減速G、横G、急操作回数を入力し、運転セッションを振り返れます","url":"https://sci-gen.github.io/apps/smooth-drive-gtrainer-pro/","downloadUrl":"https://apps.apple.com/jp/app/id6787867434","offers":{"@type":"Offer","price":1200,"priceCurrency":"JPY","availability":"https://schema.org/InStock","priceValidUntil":"2026-07-23","description":"期間限定導入価格。2026-07-24に通常2500円へ戻ります。"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"走行中にiPhoneのセンサーでGを自動計測しますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。走行後、安全な場所へ停車してからG値と急操作回数を手入力します。"}},{"@type":"Question","name":"運転中に操作する必要がありますか？","acceptedAnswer":{"@type":"Answer","text":"ありません。運転中は操作せず、必ず安全な場所へ停車してから記録してください。"}},{"@type":"Question","name":"0〜100のスコアは安全性の判定ですか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。入力値から算出する振り返りの目安であり、運転技術、安全性、事故リスクを判定・保証しません。"}},{"@type":"Question","name":"記録を共有できますか？","acceptedAnswer":{"@type":"Answer","text":"はい。ルート、G値、急操作回数、スコアをCSVの1行形式で共有できます。"}}]}]}</script>
 </head>
 <body>
@@ -43,7 +61,7 @@
           <h1>運転G診断Pro</h1>
       <p class="lead">走行後に加速G、減速G、横G、急操作回数を入力し、運転セッションを振り返れます。</p>
       <div class="actions">
-        <a class="app-store-badge" href="https://apps.apple.com/jp/app/id6787867434" aria-label="運転G診断ProをApp Storeで見る"><img src="../../assets/badges/app-store-ja.svg" alt="App Storeからダウンロード"></a>
+        <a class="app-store-badge" href="https://apps.apple.com/jp/app/id6787867434" aria-label="運転G診断ProをApp Storeで見る" data-analytics-app-store data-app-name="運転G診断Pro" data-app-slug="smooth-drive-gtrainer-pro" data-app-category="move" data-analytics-placement="app_detail_hero"><img src="../../assets/badges/app-store-ja.svg" alt="App Storeからダウンロード"></a>
         <a class="button secondary" href="../../categories/move/index.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="1.5"></rect><rect x="13" y="4" width="7" height="7" rx="1.5"></rect><rect x="4" y="13" width="7" height="7" rx="1.5"></rect><rect x="13" y="13" width="7" height="7" rx="1.5"></rect></svg><span>移動・位置のアプリ</span></a>
       </div>
       <div class="metric-row">
@@ -136,7 +154,7 @@
   </section>
 </main>
 <footer>
-  Generated 2026-07-11. App Store availability and pricing can change.
+  Generated 2026-07-12. App Store availability and pricing can change.
 </footer>
 
 </body>

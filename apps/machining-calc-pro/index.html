@@ -19,6 +19,24 @@
   <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../../assets/site.css">
   <script defer src="../../assets/catalog-filter.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K3P7D4MH7P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-K3P7D4MH7P");
+  document.addEventListener("click", function(event) {
+    const link = event.target.closest("a[data-analytics-app-store]");
+    if (!link) return;
+    gtag("event", "app_store_click", {
+      app_name: link.dataset.appName,
+      app_slug: link.dataset.appSlug,
+      app_category: link.dataset.appCategory,
+      placement: link.dataset.analyticsPlacement,
+      transport_type: "beacon"
+    });
+  });
+</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"切削条件計算Pro","applicationCategory":"Productivity","operatingSystem":"iOS","description":"回転数と送りを計算し、加工条件を現場メモとして保存できます","url":"https://sci-gen.github.io/apps/machining-calc-pro/","downloadUrl":"https://apps.apple.com/jp/app/id6787850570","offers":{"@type":"Offer","price":1800,"priceCurrency":"JPY","availability":"https://schema.org/InStock"}}</script>
 </head>
 <body>
@@ -40,7 +58,7 @@
       <h1>切削条件計算Pro</h1>
       <p class="lead">回転数と送りを計算し、加工条件を現場メモとして保存できます。</p>
       <div class="actions">
-        <a class="app-store-badge" href="https://apps.apple.com/jp/app/id6787850570" aria-label="切削条件計算ProをApp Storeで見る"><img src="../../assets/badges/app-store-ja.svg" alt="App Storeからダウンロード"></a>
+        <a class="app-store-badge" href="https://apps.apple.com/jp/app/id6787850570" aria-label="切削条件計算ProをApp Storeで見る" data-analytics-app-store data-app-name="切削条件計算Pro" data-app-slug="machining-calc-pro" data-app-category="work" data-analytics-placement="app_detail_hero"><img src="../../assets/badges/app-store-ja.svg" alt="App Storeからダウンロード"></a>
         <a class="button secondary" href="../../categories/work/index.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="1.5"></rect><rect x="13" y="4" width="7" height="7" rx="1.5"></rect><rect x="4" y="13" width="7" height="7" rx="1.5"></rect><rect x="13" y="13" width="7" height="7" rx="1.5"></rect></svg><span>作業効率化のアプリ</span></a>
       </div>
       <div class="metric-row">
@@ -77,7 +95,7 @@
   </section>
 </main>
 <footer>
-  Generated 2026-07-11. App Store availability and pricing can change.
+  Generated 2026-07-12. App Store availability and pricing can change.
 </footer>
 
 </body>

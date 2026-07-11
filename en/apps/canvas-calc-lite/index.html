@@ -19,6 +19,24 @@
   <link rel="icon" href="../../../assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../../../assets/site.css">
   <script defer src="../../../assets/catalog-filter.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K3P7D4MH7P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-K3P7D4MH7P");
+  document.addEventListener("click", function(event) {
+    const link = event.target.closest("a[data-analytics-app-store]");
+    if (!link) return;
+    gtag("event", "app_store_click", {
+      app_name: link.dataset.appName,
+      app_slug: link.dataset.appSlug,
+      app_category: link.dataset.appCategory,
+      placement: link.dataset.analyticsPlacement,
+      transport_type: "beacon"
+    });
+  });
+</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"自由キャンバス計算機 Lite","applicationCategory":"Productivity","operatingSystem":"iOS","description":"keep 自由キャンバス計算機 Lite focused on one repeatable iPhone workflow","url":"https://sci-gen.github.io/en/apps/canvas-calc-lite/"}</script>
 </head>
 <body>
@@ -41,7 +59,7 @@
       <h1>自由キャンバス計算機 Lite</h1>
       <p class="lead">keep 自由キャンバス計算機 Lite focused on one repeatable iPhone workflow.</p>
       <div class="actions">
-        <a class="app-store-badge" href="https://apps.apple.com/jp/app/id6787426228" aria-label="View 自由キャンバス計算機 Lite on the App Store"><img src="../../../assets/badges/app-store-en.svg" alt="Download on the App Store"></a>
+        <a class="app-store-badge" href="https://apps.apple.com/jp/app/id6787426228" aria-label="View 自由キャンバス計算機 Lite on the App Store" data-analytics-app-store data-app-name="自由キャンバス計算機 Lite" data-app-slug="canvas-calc-lite" data-app-category="work" data-analytics-placement="app_detail_hero"><img src="../../../assets/badges/app-store-en.svg" alt="Download on the App Store"></a>
         <a class="button secondary" href="../../categories/work/index.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="1.5"></rect><rect x="13" y="4" width="7" height="7" rx="1.5"></rect><rect x="4" y="13" width="7" height="7" rx="1.5"></rect><rect x="13" y="13" width="7" height="7" rx="1.5"></rect></svg><span>More Work &amp; productivity apps</span></a>
       </div>
       <div class="metric-row">

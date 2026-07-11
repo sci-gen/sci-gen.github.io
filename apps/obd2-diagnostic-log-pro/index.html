@@ -21,6 +21,24 @@
   <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../../assets/site.css">
   <script defer src="../../assets/catalog-filter.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K3P7D4MH7P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-K3P7D4MH7P");
+  document.addEventListener("click", function(event) {
+    const link = event.target.closest("a[data-analytics-app-store]");
+    if (!link) return;
+    gtag("event", "app_store_click", {
+      app_name: link.dataset.appName,
+      app_slug: link.dataset.appSlug,
+      app_category: link.dataset.appCategory,
+      placement: link.dataset.analyticsPlacement,
+      transport_type: "beacon"
+    });
+  });
+</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"OBD2診断ログPro","applicationCategory":"Utilities","operatingSystem":"iOS","description":"外部スキャナーで確認したOBD2故障コード、車両状態、対応メモを手入力で整理できます","url":"https://sci-gen.github.io/apps/obd2-diagnostic-log-pro/","downloadUrl":"https://apps.apple.com/jp/app/id6787867170","offers":{"@type":"Offer","price":1000,"priceCurrency":"JPY","availability":"https://schema.org/InStock","priceValidUntil":"2026-07-23","description":"期間限定導入価格。2026-07-24に通常2500円へ戻ります。"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"ELM327などのOBD2アダプターへ直接接続しますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。本アプリはアダプターへ接続せず、外部スキャナーで確認した値を手入力します。"}},{"@type":"Question","name":"故障コードの読取りや消去はできますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。コードの読取り・消去は外部スキャナーで行い、本アプリには消去前の状態と対応履歴を残します。"}},{"@type":"Question","name":"どの情報を記録できますか？","acceptedAnswer":{"@type":"Answer","text":"車両名、故障コード、警告状態、RPM、水温、速度、症状、対応内容を記録できます。"}},{"@type":"Question","name":"整備工場へ共有できますか？","acceptedAnswer":{"@type":"Answer","text":"はい。複数の記録をCSV形式で共有できます。ただし故障原因や安全性を判定するアプリではありません。"}}]}]}</script>
 </head>
 <body>
@@ -43,7 +61,7 @@
           <h1>OBD2診断ログPro</h1>
       <p class="lead">外部スキャナーで確認したOBD2故障コード、車両状態、対応メモを手入力で整理できます。</p>
       <div class="actions">
-        <a class="app-store-badge" href="https://apps.apple.com/jp/app/id6787867170" aria-label="OBD2診断ログProをApp Storeで見る"><img src="../../assets/badges/app-store-ja.svg" alt="App Storeからダウンロード"></a>
+        <a class="app-store-badge" href="https://apps.apple.com/jp/app/id6787867170" aria-label="OBD2診断ログProをApp Storeで見る" data-analytics-app-store data-app-name="OBD2診断ログPro" data-app-slug="obd2-diagnostic-log-pro" data-app-category="tools" data-analytics-placement="app_detail_hero"><img src="../../assets/badges/app-store-ja.svg" alt="App Storeからダウンロード"></a>
         <a class="button secondary" href="../../categories/tools/index.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="1.5"></rect><rect x="13" y="4" width="7" height="7" rx="1.5"></rect><rect x="4" y="13" width="7" height="7" rx="1.5"></rect><rect x="13" y="13" width="7" height="7" rx="1.5"></rect></svg><span>便利ツールのアプリ</span></a>
       </div>
       <div class="metric-row">
@@ -136,7 +154,7 @@
   </section>
 </main>
 <footer>
-  Generated 2026-07-11. App Store availability and pricing can change.
+  Generated 2026-07-12. App Store availability and pricing can change.
 </footer>
 
 </body>
