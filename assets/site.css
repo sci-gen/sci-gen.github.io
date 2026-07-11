@@ -131,10 +131,10 @@
   .phone {
     justify-self: center;
     width: min(100%, 310px);
-    border-radius: 28px;
-    border: 10px solid #1e252f;
+    border-radius: 42px;
+    border: 9px solid #1e252f;
     background: #1e252f;
-    box-shadow: 0 20px 50px rgba(23, 32, 42, .22);
+    box-shadow: 0 20px 50px rgba(23, 32, 42, .24), inset 0 0 0 1px rgba(255,255,255,.16);
     overflow: hidden;
   }
 .phone img,
@@ -355,12 +355,15 @@
   .catalog-shot-link { display: block; background: #f1f4f8; }
   .catalog-card .thumb {
     display: block;
-    width: 100%;
+    width: calc(100% - 28px);
     height: 300px;
+    margin: 14px 14px 0;
     aspect-ratio: auto;
-    border: 0;
-    border-radius: 0;
+    border: 7px solid #1e252f;
+    border-radius: 32px;
     object-position: top center;
+    background: #1e252f;
+    box-shadow: 0 10px 24px rgba(23, 32, 42, .16);
   }
   .catalog-card .app-copy { padding: 14px 16px 16px; }
   .catalog-card h3 { margin: 8px 0 6px; font-size: 19px; line-height: 1.25; }
@@ -526,7 +529,7 @@
     .priority-grid .app-card { grid-template-columns: 74px minmax(0, 1fr); }
     .app-card p { margin: 8px 0; }
     .app-grid { grid-template-columns: 1fr; gap: 14px; padding: 18px 0 30px; }
-    .catalog-card .thumb { height: min(42svh, 330px); }
+    .catalog-card .thumb { height: min(42svh, 330px); border-radius: 30px; }
     .catalog-card .app-copy { padding: 13px 14px 14px; }
     .catalog-card h3 { font-size: 18px; }
     .catalog-summary { line-height: 1.45; }
