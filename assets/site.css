@@ -338,6 +338,43 @@
     border: 1px solid var(--line);
     background: #eef2f5;
   }
+  .catalog-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: stretch;
+    overflow: hidden;
+    padding: 0;
+    border-radius: 14px;
+    transition: transform .16s ease, box-shadow .16s ease;
+  }
+  .catalog-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 30px rgba(23, 32, 42, .11);
+  }
+  .catalog-shot-link { display: block; background: #f1f4f8; }
+  .catalog-card .thumb {
+    display: block;
+    width: 100%;
+    height: 300px;
+    aspect-ratio: auto;
+    border: 0;
+    border-radius: 0;
+    object-position: top center;
+  }
+  .catalog-card .app-copy { padding: 14px 16px 16px; }
+  .catalog-card h3 { margin: 8px 0 6px; font-size: 19px; line-height: 1.25; }
+  .catalog-summary {
+    display: -webkit-box;
+    margin: 0;
+    overflow: hidden;
+    color: #344255;
+    line-height: 1.55;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+  .catalog-meta { margin: 10px 0 0; color: var(--muted); font-size: 13px; font-weight: 750; }
+  .catalog-card .category-label { margin-top: 0; }
   .meta, .small { color: var(--muted); }
   .small { font-size: 14px; }
   .metric-row {
@@ -480,7 +517,7 @@
     .catalog-filter-list { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 4px; scrollbar-width: none; }
     .catalog-filter-list::-webkit-scrollbar { display: none; }
     .catalog-filter { flex: 0 0 auto; }
-    .app-card {
+    .app-card:not(.catalog-card) {
       grid-template-columns: 64px minmax(0, 1fr);
       gap: 12px;
       align-items: start;
@@ -488,6 +525,11 @@
     }
     .priority-grid .app-card { grid-template-columns: 74px minmax(0, 1fr); }
     .app-card p { margin: 8px 0; }
+    .app-grid { grid-template-columns: 1fr; gap: 14px; padding: 18px 0 30px; }
+    .catalog-card .thumb { height: min(42svh, 330px); }
+    .catalog-card .app-copy { padding: 13px 14px 14px; }
+    .catalog-card h3 { font-size: 18px; }
+    .catalog-summary { line-height: 1.45; }
     .app-title-row {
       display: grid;
       grid-template-columns: 28px minmax(0, 1fr);
