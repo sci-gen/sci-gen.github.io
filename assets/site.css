@@ -192,21 +192,14 @@
     position: relative;
     justify-self: center;
     width: min(100%, 310px);
-    aspect-ratio: 9 / 19.5;
-    /* Native iPhone screen: no invented device shell or simulator bezel. */
-    border-radius: 13.5%;
-    background: #f2f4f7;
-    box-shadow: 0 16px 36px rgba(23, 32, 42, .16);
-    overflow: hidden;
+    /* Show the native Simulator capture at its exact, uncropped dimensions. */
+    background: transparent;
   }
 .phone img,
 .phone video {
   display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top;
-  background: #f2f4f7;
+  height: auto;
 }
 .screenshot-gallery {
   display: grid;
@@ -419,25 +412,17 @@
   .catalog-shot-link {
     display: block;
     align-self: center;
-    height: 300px;
-    aspect-ratio: 9 / 19.5;
+    width: min(100%, 200px);
     margin-top: 14px;
-    overflow: hidden;
-    /* This is the iPhone display itself, not a fabricated phone chassis. */
-    border-radius: 13.5%;
-    background: #f2f4f7;
-    box-shadow: 0 10px 24px rgba(23, 32, 42, .13);
+    background: transparent;
   }
   .catalog-card .thumb {
     display: block;
     width: 100%;
-    height: 100%;
+    height: auto;
     margin: 0;
-    aspect-ratio: auto;
     border: 0;
     border-radius: 0;
-    object-position: top center;
-    background: #f2f4f7;
   }
   .catalog-card .app-copy { padding: 14px 16px 16px; }
   .catalog-card h3 { margin: 8px 0 6px; font-size: 19px; line-height: 1.25; }
@@ -611,7 +596,7 @@
     .priority-grid .app-card { grid-template-columns: 74px minmax(0, 1fr); }
     .app-card p { margin: 8px 0; }
     .app-grid { grid-template-columns: 1fr; gap: 14px; padding: 18px 0 30px; }
-    .catalog-shot-link { height: min(42svh, 330px); }
+    .catalog-shot-link { width: min(100%, 152px); }
     .catalog-card .app-copy { padding: 13px 14px 14px; }
     .catalog-card h3 { font-size: 18px; }
     .catalog-summary { line-height: 1.45; }
